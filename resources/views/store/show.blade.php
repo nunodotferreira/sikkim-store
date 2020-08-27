@@ -10,20 +10,20 @@
     <section class="container mx-auto max-w-6xl mx-auto mb-24">
         <div class="grid grid-cols-4 gap-2">
             <a href="">
-                <img src="{{ asset('storage/placeholders/categroy-banners-01.jpg') }}"
+                <img src="{{ asset('images/placeholders/categroy-banners-01.jpg') }}"
                      alt="">
             </a>
 
             <a href="">
-                <img src="{{ asset('storage/placeholders/categroy-banners-03.jpg') }}"
+                <img src="{{ asset('images/placeholders/categroy-banners-03.jpg') }}"
                      alt="">
             </a>
             <a href="">
-                <img src="{{ asset('storage/placeholders/pickles-banner-01.jpg') }}"
+                <img src="{{ asset('images/placeholders/pickles-banner-01.jpg') }}"
                      alt="">
             </a>
             <a href="">
-                <img src="{{ asset('storage/placeholders/categroy-banners-04.jpg') }}"
+                <img src="{{ asset('images/placeholders/categroy-banners-04.jpg') }}"
                      alt="">
             </a>
         </div>
@@ -56,7 +56,7 @@
                     <p class="text-sm text-gray-600">Tea</p>
                     <p class="text-sm text-gray-400">69 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/tea.jpg') }}"
+                <img src="{{ asset('images/placeholders/tea.jpg') }}"
                      class="w-16"
                      alt="Tea">
             </a>
@@ -66,7 +66,7 @@
                     <p class="text-sm text-gray-600">Immunity Booster</p>
                     <p class="text-sm text-gray-400">73 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/immunity.jpg') }}"
+                <img src="{{ asset('images/placeholders/immunity.jpg') }}"
                      class="w-16"
                      alt="Immunity Booster">
             </a>
@@ -76,7 +76,7 @@
                     <p class="text-sm text-gray-600">Vegetable Pickles</p>
                     <p class="text-sm text-gray-400">53 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/pickles.jpg') }}"
+                <img src="{{ asset('images/placeholders/pickles.jpg') }}"
                      class="w-16"
                      alt="Vegetable Pickles">
             </a>
@@ -86,7 +86,7 @@
                     <p class="text-sm text-gray-600">Chillies</p>
                     <p class="text-sm text-gray-400">32 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/chilli.jpg') }}"
+                <img src="{{ asset('images/placeholders/chilli.jpg') }}"
                      class="w-16"
                      alt="Chillies">
             </a>
@@ -96,7 +96,7 @@
                     <p class="text-sm text-gray-600">Chocolates</p>
                     <p class="text-sm text-gray-400">9 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/chocolate.jpg') }}"
+                <img src="{{ asset('images/placeholders/chocolate.jpg') }}"
                      class="w-16"
                      alt="Chocolates">
             </a>
@@ -106,7 +106,7 @@
                     <p class="text-sm text-gray-600">Herbal</p>
                     <p class="text-sm text-gray-400">29 items</p>
                 </div>
-                <img src="{{ asset('storage/placeholders/chocolate.jpg') }}"
+                <img src="{{ asset('images/placeholders/chocolate.jpg') }}"
                      class="w-16"
                      alt="Herbal">
             </a>
@@ -141,7 +141,7 @@
                            class="block relative md:h-48 h-80  overflow-hidden hover:opacity-75">
                             <img alt="ecommerce"
                                  class="object-cover object-center w-full h-full block"
-                                 src="{{ asset('storage/placeholders/product1.jpg') }}">
+                                 src="{{ asset('images/placeholders/product1.jpg') }}">
                         </a>
                         <div class="mt-3 px-6 md:px-4 pb-2 flex-col h-full">
                             <h2 class="text-gray-700 text-sm font-normal flex-1">{{ 'Purezza Activated Charcoal & Peppermint Soap- 100g' }} </h2>
