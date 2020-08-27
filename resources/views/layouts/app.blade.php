@@ -29,13 +29,13 @@
             <nav x-data="{ open: false }"
                  class="bg-secondary-900">
                 <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div class="relative flex items-center justify-between py-6">
+                    <div class="relative flex items-center justify-between py-4">
                         <div class="flex items-center sm:items-stretch sm:justify-start">
                             <a href="{{ env('APP_URL') }}"
                                class="flex items-center justify-between">
                                 <div class="flex-shrink-0 mr-2  ml-0">
-                                    <x-logo class="block lg:hidden h-16 w-16 overflow-hidden object-cover rounded-full shadow"></x-logo>
-                                    <x-logo class="hidden lg:block h-16 w-16 overflow-hidden object-cover rounded-full shadow"></x-logo>
+                                    <x-logo class="block lg:hidden h-12 w-12 overflow-hidden object-cover rounded-full shadow"></x-logo>
+                                    <x-logo class="hidden lg:block h-12 w-12 overflow-hidden object-cover rounded-full shadow"></x-logo>
                                 </div>
                             </a>
                         </div>
@@ -43,11 +43,11 @@
                             <form action=""
                                   class="w-3/5  relative">
                                 <input type="text"
-                                       placeholder="I am shopping for.."
-                                       class="py-3 px-4 bg-gray-200 rounded-sm w-full text-sm font-light placeholder-gray-600 tracking-wider focus:outline-none">
+                                       placeholder="Search for stores/shops"
+                                       class="py-2 px-4 bg-gray-200 rounded-sm w-full text-sm font-light placeholder-gray-600 tracking-wider focus:outline-none">
                                 <button type="submit"
-                                        class="absolute top-0 right-0 h-full w-20 flex items-center justify-center overflow-hidden bg-green-600 p-2 rounded-r-sm border border-gray-200 hover:bg-green-700">
-                                    <svg class="w-5 h-5 text-gray-200"
+                                        class="absolute top-0 right-0 h-full flex items-center justify-center overflow-hidden p-2 rounded-r-sm border border-gray-200 focus:outline-none">
+                                    <svg class="w-5 h-5 text-gray-800"
                                          xmlns="http://www.w3.org/2000/svg"
                                          fill="none"
                                          viewBox="0 0 24 24"
@@ -58,72 +58,12 @@
                                               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                                     </svg>
                                 </button>
-
                             </form>
                         </div>
                         <div class="space-x-6 flex items-center">
                             <a href="{{ route('login') }}"
-                               class="py-1 md:py-2 text-sm font-light leading-5 text-gray-400 @if(request()->routeIs('login')) text-gray-200 @endif hover:text-gray-200  focus:outline-none focus:text-gray-400  transition duration-200 ease-in-out">Login
-                                or Register</a>
-                            <a href=""
-                               class="inline-flex items-center">
-                                <div class="relative">
-                                    <svg class="w-6 h-6 text-green-400 mr-2"
-                                         xmlns="http://www.w3.org/2000/svg"
-                                         fill="none"
-                                         viewBox="0 0 24 24"
-                                         stroke="currentColor">
-                                        <path stroke-linecap="round"
-                                              stroke-linejoin="round"
-                                              stroke-width="1"
-                                              d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"/>
-                                    </svg>
-                                    <div class="absolute top-0 left-0 -mt-3 ml-4 w-4 h-4 bg-green-900 border border-green-600 overflow-hidden rounded-full flex items-center justify-center">
-                                        <span class="text-xs text-white"> 0 </span>
-                                    </div>
-                                </div>
-
-                                <span class="text-gray-200">
-                                    ₹ 0.00
-                                </span>
-                            </a>
+                               class="bg-gradient-to-r from-teal-500 to-green-600 px-8 rounded-md py-1 md:py-2 text-sm font-light leading-5 text-gray-200 hover:text-gray-100  focus:outline-none focus:text-gray-400  transition duration-200 ease-in-out font-semibold tracking-wide hover:from-indigo-600 to-green-600">Create Store</a>
                         </div>
-                    </div>
-                    <div>
-                        <nav class="flex items-center justify-between text-gray-300 text-sm font-light py-3">
-                            <button class="font-light flex items-center justify-center hover:text-gray-100">
-                                <svg class="h-5 w-5 text-green-500 mr-2"
-                                     xmlns="http://www.w3.org/2000/svg"
-                                     fill="none"
-                                     viewBox="0 0 24 24"
-                                     stroke="currentColor">
-                                    <path stroke-linecap="round"
-                                          stroke-linejoin="round"
-                                          stroke-width="2"
-                                          d="M4 6h16M4 12h16M4 18h16"/>
-                                </svg>
-                                All Categories
-                            </button>
-                            <div class="flex-1 flex items-center justify-center space-x-6">
-                                <a href=""
-                                   class="hover:text-gray-100 @if( request()->routeIs('index')) font-medium text-white @endif">Home</a>
-                                <a href=""
-                                   class="hover:text-gray-100">Best Seller</a>
-                                <a href=""
-                                   class="hover:text-gray-100">Sell Online</a>
-                                <a href=""
-                                   class="hover:text-gray-100">Shops</a>
-                                <a href=""
-                                   class="hover:text-gray-100">Packaging</a>
-                                <a href=""
-                                   class="hover:text-gray-100">Vendor</a>
-                            </div>
-                            <div>
-                                <button type="button"
-                                        class="hover:text-gray-100 font-light">Recently Viewed
-                                </button>
-                            </div>
-                        </nav>
                     </div>
                 </div>
             </nav>

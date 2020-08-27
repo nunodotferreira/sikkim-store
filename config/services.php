@@ -30,4 +30,8 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'site' => [
+        'url' => env('SITE_URL', 'sikkimstore.test')
+    ],
+
 ];

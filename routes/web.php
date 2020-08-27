@@ -13,6 +13,11 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::domain('{store}.'.config('services.site.url'))->group( function () {
+    Route::get('/', function ($store){
+        return view('store.show', compact('store'));
+    })->name('index');
+});
 
 Route::get('/', function () {
     return view('welcome');
